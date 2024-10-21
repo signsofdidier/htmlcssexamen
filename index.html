@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- STYLE CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Hype</title>
+
+</head>
+<body>
+
+<header id="hero" class="cbgblue">
+    <!-- wrapper -->
+    <section class="wrapper text-center d-flex flex-column align-items-center">
+        <div>
+            <a href="./"><img id="navbrand" src="./images/logo.png" alt="Hype logo"></a>
+            <p class="fs-6 text-white sourcesanslight">LANDING PAGE</p>
+            <h1 class="fs-1 text-white" data-aos="fade-down">Hype Landing Page is the best way to<br>
+                present your beautiful mobile app.</h1>
+            <div class="d-flex justify-content-center text-center">
+                <!-- link button -->
+                <a class="btn cbgseetrublack fs-4 text-white sourcesansbold text-decoration" href="#">Learn More</a>
+                <a class="btn cbggreen fs-4 text-white sourcesansbold text-decoration" href="#">Download Now</a>
+            </div>
+        </div>
+        <img id="hero-image" src="./images/hero-img.png" alt="hero image" data-aos="fade-up" data-aos-delay="200">
+    </section><!-- End wrapper -->
+</header>
+
+<!-- Main section -->
+<main>
+    <!-- Section 1 -->
+    <section id="section1">
+        <!-- wrapper -->
+        <div class="wrapper text-center py-100">
+            <!-- Header section 1-->
+            <header>
+                <h2 class="fs-2 text-black">Built with Bootstrap v3.0</h2>
+                <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol. Olypian<br>
+                    quarrels et gorilla congolium sic ad nauseum.
+                </p>
+            </header>
+
+            <!-- div groepering van articles -->
+            <div class="d-flex justify-content-between mt-100">
+                <!-- article 1 -->
+                <article>
+                    <svg class="icons-gray-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                        <g id="svg-source">
+                            <g id="compass">
+                                <g>
+                                    <path d="M22.59,8.65l-9.55,4.09c-.14.06-.24.17-.3.3l-4.09,9.54c-.09.22-.04.47.13.64.11.11.26.17.41.17.07,0,.15-.02.23-.05l9.54-4.09c.14-.06.25-.17.31-.3l4.09-9.54c.09-.22.04-.47-.12-.64-.16-.16-.42-.21-.64-.12ZM10.28,21.72l3.18-7.43,4.25,4.25-7.43,3.18ZM18.53,17.72l-4.25-4.25,7.43-3.19-3.18,7.44Z"/>
+                                    <path d="M16,0C7.18,0,0,7.18,0,16s7.18,16,16,16,16-7.18,16-16S24.82,0,16,0ZM16,30.85c-8.19,0-14.84-6.66-14.84-14.85,0-8.18,6.66-14.84,14.84-14.84s14.84,6.66,14.84,14.84-6.66,14.85-14.84,14.85Z"/>
+                                    <path d="M16,4.28c.44,0,.81-.36.81-.81s-.36-.81-.81-.81-.81.36-.81.81.36.81.81.81ZM16,3.13c.19,0,.35.15.35.34,0,.38-.69.38-.69,0,0-.19.15-.34.34-.34Z"/>
+                                    <path d="M16,27.72c-.44,0-.81.36-.81.81s.36.81.81.81.81-.36.81-.81-.36-.81-.81-.81ZM15.66,28.53c0-.19.15-.34.34-.34s.35.15.35.34c0,.39-.69.39-.69,0Z"/>
+                                    <path d="M28.53,15.19c-.44,0-.81.36-.81.81s.37.81.81.81.81-.36.81-.81c0-.45-.36-.81-.81-.81ZM28.19,16c0-.19.15-.34.34-.34s.34.15.34.34c0,.39-.68.39-.68,0Z"/>
+                                    <path d="M3.47,15.19c-.45,0-.81.36-.81.81s.36.81.81.81.81-.36.81-.81c0-.45-.36-.81-.81-.81ZM3.13,16c0-.19.15-.34.35-.34s.34.15.34.34c0,.38-.69.38-.69,0Z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <h3 class="fs-3 text-green">Fully responsive</h3>
+                    <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol. </p>
+                </article>
+                <!-- article 2 -->
+                <article>
+                    <svg class="icons-gray-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 31.07">
+                        <g id="svg-source">
+                            <g id="mapicon">
+                                <path d="M31.22.04l-10.08,3.75L11.06.04s-.04,0-.07,0c-.05-.01-.09-.02-.14-.02s-.09,0-.14.02c-.02,0-.05,0-.07,0L.38,3.86c-.23.08-.38.3-.38.54v26.08c0,.19.09.36.25.48.1.07.21.1.33.1.07,0,.13-.01.2-.04l10.08-3.75,10.08,3.75c.07.02.14.04.2.04s.14-.01.2-.04l10.28-3.83c.23-.08.38-.3.38-.54V.58c0-.19-.09-.37-.25-.47-.15-.11-.35-.14-.53-.07ZM10.28,26.26l-9.13,3.4V4.8L10.28,1.41v24.85ZM20.57,29.66l-9.13-3.4V1.41l9.13,3.4v24.85ZM30.85,26.26l-9.13,3.4V4.8l9.13-3.4v24.85Z"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <h3 class="fs-3 text-green">120 SVG Icons</h3>
+                    <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol. </p>
+                </article>
+                <!-- article 3 -->
+                <article>
+                    <svg class="icons-gray-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                        <g id="svg-source">
+                            <g id="calendar">
+                                <g>
+                                    <path d="M31.43,0H.57c-.31,0-.57.26-.57.57v30.85c0,.32.26.57.57.57h30.85c.31,0,.57-.26.57-.58V.57c0-.31-.26-.57-.57-.57ZM1.15,1.15h29.7v8.42H1.15V1.15ZM1.15,10.71h29.7v12.43h-7.14c-.31,0-.57.26-.57.58v7.14H1.15V10.71ZM30.04,24.29l-5.75,5.75v-5.75h5.75ZM25.1,30.85l5.75-5.75v5.75h-5.75Z"/>
+                                    <path d="M9.28,3.85c-.83,0-1.51.67-1.51,1.51s.68,1.51,1.51,1.51,1.51-.68,1.51-1.51-.68-1.51-1.51-1.51ZM8.92,5.36c0-.2.16-.36.35-.36s.36.16.36.36c0,.41-.72.41-.72,0Z"/>
+                                    <path d="M22.71,3.85c-.83,0-1.51.67-1.51,1.51s.68,1.51,1.51,1.51,1.51-.68,1.51-1.51-.68-1.51-1.51-1.51ZM22.35,5.36c0-.2.16-.36.36-.36s.36.16.36.36c0,.4-.72.41-.72,0Z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <h3 class="fs-3 text-green">HTML5 & CSS3</h3>
+                    <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol. </p>
+                </article>
+            </div><!-- End groepering articles -->
+        </div><!-- End wrapper -->
+    </section><!-- End section 1-->
+
+    <!-- Section 2 -->
+    <section id="section2">
+        <!-- wrapper -->
+        <div class="wrapper d-flex justify-content-center align-items-center">
+            <!-- images -->
+            <div class="d-flex justify-content-center me-50">
+                <div id="section-2-img-parent" class="mt-50" data-aos="fade-left">
+                    <img id="iphone2" src="./images/iphone2.png" alt="iphone" data-aos="fade-left" data-aos-delay="300">
+                    <img id="iphone1" src="./images/iphone1.png" alt="iphone" >
+                </div>
+            </div><!-- end images -->
+
+            <!-- Header en articles -->
+            <div class="py-100 ml-50">
+                <header>
+                    <h2 class="fs-2 text-black">Detailed documentation</h2>
+                    <p class="fs-5 text-black sourcesansregular  mb-50">Epsum factorial non deposit quid pro quo hic escorol.<br> Olypian quarrels et gorilla congolium sic.</p>
+                </header>
+
+                <!-- article 1 -->
+                <article class="d-flex mb-50">
+                    <div class="w-70">
+                        <svg class="icons-gray-small " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 31.95">
+                            <g id="svg-source">
+                                <g id="graph-pie1">
+                                    <g>
+                                        <path d="M17.7,0h-.58v15.79h14.8l.04-.53c.02-.32.04-.65.04-.97,0-7.88-6.41-14.29-14.3-14.29ZM30.84,14.64h-12.56V1.17c6.98.3,12.56,6.07,12.56,13.12,0,.12,0,.23,0,.35Z"/>
+                                        <path d="M14.87,3.36h-.58C6.41,3.36,0,9.78,0,17.66s6.41,14.29,14.3,14.29,13.76-5.85,14.25-13.33l.05-.62h-13.72V3.36ZM27.34,19.16c-.75,6.57-6.36,11.64-13.05,11.64-7.24,0-13.14-5.89-13.14-13.14S6.74,4.84,13.72,4.53v14.62s13.63,0,13.63,0Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="section3-article-div">
+                        <h4 class="fs-5 text-green sourcesanssemibold">Beautiful, modern design</h4>
+                        <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol.</p>
+                    </div>
+                </article>
+                <!-- article 2 -->
+                <article class="d-flex">
+                    <div class="w-70">
+                        <svg class="icons-gray-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 31.98">
+                            <g id="svg-source">
+                                <g id="joystick">
+                                    <g>
+                                        <path d="M20.3,25.41h-8.61c-.98,0-1.32.47-1.44.75-.12.28-.2.85.49,1.54l3.59,3.59c.44.44,1.03.69,1.66.69s1.22-.24,1.66-.69l3.59-3.59c.7-.7.61-1.27.49-1.54-.11-.27-.45-.74-1.44-.74ZM20.37,26.82l-3.59,3.59c-.42.41-1.15.41-1.56,0l-3.59-3.59c-.06-.05-.1-.1-.13-.15.05,0,.12-.01.19-.01h8.61c.08,0,.15,0,.2.01-.03.04-.07.09-.13.15Z"/>
+                                        <path d="M31.31,14.31l-3.6-3.59c-.38-.38-.76-.57-1.14-.57-.53,0-1.14.4-1.14,1.52v8.61c0,1.12.61,1.52,1.14,1.52.38,0,.77-.19,1.14-.57l3.6-3.59c.44-.45.69-1.03.69-1.67s-.24-1.22-.69-1.66ZM30.43,16.76l-3.59,3.59c-.06.06-.1.1-.15.13,0-.05-.01-.12-.01-.2v-8.61c0-.08,0-.14.01-.19.04.03.09.07.15.13l3.59,3.59c.21.21.32.48.32.78s-.11.57-.32.78Z"/>
+                                        <path d="M11.69,6.54h8.61c.99,0,1.33-.46,1.44-.74.12-.28.2-.85-.49-1.55l-3.59-3.59c-.88-.89-2.44-.89-3.32,0l-3.59,3.59c-.69.69-.61,1.26-.49,1.54.12.28.45.74,1.44.74ZM11.62,5.14l3.59-3.59c.41-.41,1.15-.41,1.56,0l3.59,3.59c.05.06.1.11.13.15-.05,0-.11.01-.2.01h-8.61c-.08,0-.14,0-.19-.01.03-.04.07-.09.13-.15Z"/>
+                                        <path d="M5.42,10.15c-.38,0-.77.19-1.14.57l-3.59,3.59c-.45.45-.69,1.03-.69,1.66s.24,1.22.69,1.66l3.59,3.59c.38.38.76.57,1.14.57s.71-.2.91-.53c.15-.26.23-.59.23-.99v-8.61c0-1.12-.62-1.52-1.14-1.52ZM5.32,20.28c0,.08,0,.15-.01.2-.04-.03-.09-.07-.15-.13l-3.59-3.59c-.43-.43-.43-1.13,0-1.56l3.59-3.59c.05-.06.1-.1.15-.13,0,.05.01.11.01.19v8.61Z"/>
+                                        <path d="M16,9.32c-3.67,0-6.66,2.99-6.66,6.66s2.99,6.66,6.66,6.66,6.66-2.98,6.66-6.66c0-3.67-2.99-6.66-6.66-6.66ZM16,21.39c-2.99,0-5.41-2.43-5.41-5.41s2.43-5.41,5.41-5.41,5.41,2.43,5.41,5.41c0,2.99-2.43,5.41-5.41,5.41Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="section3-article-div">
+                        <h4 class="fs-5 text-green sourcesanssemibold">Easy to setup</h4>
+                        <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol.</p>
+                    </div>
+                </article>
+            </div><!-- End Header en articles -->
+        </div><!-- End wrapper -->
+    </section><!-- End section 2 -->
+
+    <!-- Section 3 -->
+    <section id="section3">
+        <!-- wrapper -->
+        <div class="wrapper d-flex justify-content-center align-items-center">
+            <!-- Header en articles -->
+            <div class="py-100 me-50">
+                <header>
+                    <h2 class="fs-2 text-black">All you want from an app</h2>
+                    <p class="fs-5 text-black sourcesansregular mb-50">Epsum factorial non deposit quid pro quo hic escorol.<br> Olypian quarrels et gorilla congolium sic.</p>
+                </header>
+
+                <!-- article 1 -->
+                <article class="d-flex mb-50">
+                    <div class="w-70">
+                        <svg class="icons-gray-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.43 32">
+                            <g id="svg-source">
+                                <g id="ribbon">
+                                    <g>
+                                        <path d="M19.86,0H.58c-.32,0-.58.26-.58.57v30.85c0,.23.14.44.35.53.22.1.46.04.63-.12l1.92-1.92s0,0,0,0l7.3-7.3,9.24,9.23c.11.11.25.17.41.17.07,0,.15-.01.22-.05.21-.09.35-.3.35-.53V.57c0-.32-.26-.57-.57-.57ZM19.29,30.04l-.78-.78v-3.62c0-.32-.26-.57-.57-.57s-.57.26-.57.57v2.47l-6.74-6.73c-.11-.11-.26-.17-.4-.17s-.29.06-.4.17l-6.73,6.73v-2.47c0-.32-.26-.57-.57-.57s-.57.26-.57.57v3.61l-.78.78V1.15h18.14v28.89h0Z"/>
+                                        <path d="M2.5,6.93c.31,0,.57-.26.57-.57v-3.86c0-.32-.26-.58-.57-.58s-.57.26-.57.58v3.86c0,.32.26.57.57.57Z"/>
+                                        <path d="M2.5,14.65c.31,0,.57-.26.57-.57v-3.86c0-.31-.26-.57-.57-.57s-.57.26-.57.57v3.86c0,.31.26.57.57.57Z"/>
+                                        <path d="M2.5,22.36c.31,0,.57-.26.57-.57v-3.86c0-.32-.26-.57-.57-.57s-.57.26-.57.57v3.86c0,.32.26.57.57.57Z"/>
+                                        <path d="M17.93,6.93c.31,0,.57-.26.57-.57v-3.86c0-.32-.26-.58-.57-.58s-.57.26-.57.58v3.86c0,.32.25.57.57.57Z"/>
+                                        <path d="M17.93,14.65c.31,0,.57-.26.57-.57v-3.86c0-.31-.26-.57-.57-.57s-.57.26-.57.57v3.86c0,.31.25.57.57.57Z"/>
+                                        <path d="M17.93,22.36c.31,0,.57-.26.57-.57v-3.86c0-.32-.26-.57-.57-.57s-.57.26-.57.57v3.86c0,.31.25.57.57.57Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="section3-article-div">
+                        <h4 class="fs-5 text-green sourcesanssemibold">Video background</h4>
+                        <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol.</p>
+                    </div>
+                </article>
+                <!-- article 2 -->
+                <article class="d-flex">
+                    <div class="w-70">
+                        <svg class="icons-gray-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.26 32">
+                            <g id="svg-source">
+                                <g id="rotate">
+                                    <g>
+                                        <path d="M29.46,11.19c-.12-.37-.52-.58-.9-.45-.37.12-.58.53-.45.9,1.67,5,.42,10.39-3.26,14.08-5.37,5.36-14.09,5.36-19.44,0-.15-.15-.25-.31-.39-.48h4.95c.39,0,.71-.32.71-.71s-.32-.71-.71-.71H3.79c-.25-.21-.58-.27-.85-.08-.02.02-.02.05-.04.07h-.39v7.47c0,.39.32.71.71.71s.71-.32.71-.71v-5.1c.16.18.3.36.47.53,2.96,2.95,6.84,4.43,10.73,4.43s7.77-1.48,10.73-4.43c4.06-4.07,5.44-10.02,3.6-15.53Z"/>
+                                        <path d="M5.41,6.28C10.77.92,19.49.92,24.85,6.28c.16.16.25.31.39.48h-4.95c-.39,0-.71.32-.71.71s.32.71.71.71h6.19c.24.2.57.27.84.08.02-.02.02-.06.05-.07h.39V.71c0-.39-.31-.71-.71-.71s-.71.32-.71.71v5.1c-.16-.18-.3-.36-.47-.53C19.94-.64,10.32-.64,4.41,5.27.34,9.34-1.04,15.3.8,20.81c.1.3.38.48.67.48.07,0,.15-.01.22-.03.38-.12.58-.53.45-.9-1.67-5-.42-10.39,3.26-14.08Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="section3-article-div">
+                        <h4 class="fs-5 text-green sourcesanssemibold">Cool animations</h4>
+                        <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol.</p>
+                    </div>
+                </article>
+            </div><!-- End Header en articles -->
+
+            <!-- images -->
+            <div class="d-flex justify-content-center ms-50">
+                <div id="section-3-img-parent" class="mt-50" data-aos="fade-right">
+                    <img id="iphone4" src="./images/iphone4.png" alt="iphone" data-aos="fade-right" data-aos-delay="300">
+                    <img id="iphone3" src="./images/iphone3.png" alt="iphone" >
+                </div>
+            </div><!-- end images -->
+
+        </div><!-- End wrapper -->
+    </section><!-- End section 3 -->
+
+    <!-- Section 4 Awesome features-->
+    <section id="section4" class="cbggray">
+        <!-- wrapper -->
+        <div class="wrapper">
+            <header class="text-center pt-100 mb-50">
+                <h2 class="fs-2 text-black">Awesome features</h2>
+                <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol.<br> Olypian quarrels et gorilla congolium sic.</p>
+            </header>
+
+            <!-- Parent van articles en image -->
+            <div class="d-flex justify-content-evenly align-items-center">
+                <!-- Article groepering div -->
+                <div class="text-end">
+                    <!-- article 1 -->
+                    <article class="mb-50">
+                        <h4 class="fs-5 text-green sourcesanssemibold">Lorem ipsum dolor</h4>
+                        <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic  factorial non deposit quid pro quo hic</p>
+                    </article>
+                    <!-- article 2 -->
+                    <article>
+                        <h4 class="fs-5 text-green sourcesanssemibold">Lorem ipsum dolor</h4>
+                        <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol. </p>
+                    </article>
+                </div>
+
+                <!-- center image -->
+                <img src="./images/iphone5.png" alt="iphone">
+
+                <!-- Article groepering div -->
+                <div>
+                    <!-- article 3 -->
+                    <article class="mb-50">
+                        <h4 class="fs-5 text-green sourcesanssemibold">Lorem ipsum dolor</h4>
+                        <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic  factorial non deposit quid pro quo hic</p>
+                    </article>
+                    <!-- article 4 -->
+                    <article>
+                        <h4 class="fs-5 text-green sourcesanssemibold">Lorem ipsum dolor</h4>
+                        <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol. </p>
+                    </article>
+                </div>
+            </div>
+        </div><!-- end wrapper -->
+    </section><!-- End section 3 -->
+
+    <!-- Gallery Section -->
+    <section id="gallery-section">
+        <!-- wrapper -->
+        <div class="wrapper py-100">
+            <header class="text-center">
+                <h2 class="fs-2 text-black">Screenshot Gallery</h2>
+                <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol.<br>Olypian quarrels et gorilla congolium sic.</p>
+            </header>
+
+            <!-- Gallery -->
+            <div id="gallery" class="d-flex justify-content-center mt-50">
+                <div class="gallery-item"><img src="./images/gallery1.jpg" alt="gallery item"></div>
+                <div class="gallery-item"><img src="./images/gallery2.jpg" alt="gallery item"></div>
+                <div class="gallery-item"><img src="./images/gallery3.jpg" alt="gallery item"></div>
+                <div class="gallery-item"><img src="./images/gallery4.jpg" alt="gallery item"></div>
+                <div class="gallery-item"><img src="./images/gallery5.jpg" alt="gallery item"></div>
+            </div>
+        </div><!-- end wrapper -->
+    </section> <!-- End gallery section -->
+
+    <!-- Section geolocation -->
+    <section id="geolocation-section" class="cbggray">
+        <!-- wrapper -->
+        <div class="wrapper text-center pt-100">
+            <header>
+                <h2 class="fs-2 text-black">Hey, Future Developer! We’re Watching...</h2>
+                <h3 class="fs-3 text-green">Go ahead, click the button.</h3>
+                <p class="fs-5 text-black sourcesansregular">But be warned—your location might just expose you as a Syntra West code wizard in training!</p>
+            </header>
+
+        </div><!-- End wrapper -->
+
+        <div id="geolocation" class="text-center">
+            <div>
+                <!-- geolocation button -->
+                <!-- De knop om de locatie op te halen -->
+                <button class="btn cbggreen d-flex justify-content-center align-items-center sourcesanssemibold fs-5" id="find-me">Click Me!<img src="./images/chicken.png" alt="chicken icon"></button><br>
+                <p id="status" class="fs-5 text-black sourcesansregular"></p>
+            </div>
+            <div class="d-flex">
+
+                <iframe src="https://www.youtube.com/embed/xUEoncwf4K0?si=Fygj64niiUJygbur" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <!-- De Leaflet kaart die altijd zichtbaar is -->
+                <div id="map"></div>
+            </div>
+
+        </div>
+
+    </section><!-- End Section geolocation -->
+
+
+</main><!-- End main-->
+
+<!-- Footer -->
+<footer class="cbgblue">
+
+    <!-- footer header-->
+    <header>
+        <!-- wrapper -->
+        <div id="footer-block-1" class="wrapper d-flex justify-content-center text-center">
+            <div  id="subscribe" class="py-100">
+                <h2 class="fs-2 text-white">Subscribe to our newsletter</h2>
+                <p class="fs-5 text-white sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol.<br> Olypian quarrels et gorilla congolium sic.</p>
+
+                    <form action="" method="post" id="subscribe-form" class="d-flex justify-content-between mt-50">
+                        <input type="email" name="email" id="subscribe-input" class="fs-5 sourcesanslight flex-grow-1" placeholder="Enter your e-mail address..." required="">
+                        <button type="submit" id="subscribe-submit" class="fs-5 text-white sourcesansbold">Notify Me</button>
+                    </form>
+            </div>
+        </div><!-- End wrapper -->
+    </header>
+
+    <div id="footer-block-2" class="text-center py-50">
+        <!-- Social media -->
+        <div id="social-media" class="mb-50">
+            <a class="mx-5 text-decoration" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <defs>
+                        <style>
+                            .cls-1{
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <g id="svg-source">
+                        <g id="google-plus">
+                            <g>
+                                <path class="cls-1" d="M15.77,11.72c-.22-1.68-1.43-3.02-2.71-3.06s-2.13,1.24-1.91,2.92c.22,1.68,1.43,3.06,2.71,3.1,1.28.04,2.13-1.29,1.91-2.97Z"/>
+                                <path class="cls-1" d="M16,0C7.16,0,0,7.16,0,16s7.16,16,16,16,16-7.16,16-16S24.84,0,16,0ZM13.36,23.96c-2.75,0-5.07-1.12-5.07-2.91s2.12-3.57,4.87-3.57c.3,0,.57,0,.86,0-.38-.37-.68-.82-.68-1.37,0-.33.1-.65.25-.93-.15.01-.3.01-.46.01-2.26,0-3.77-1.61-3.77-3.6s2.09-3.63,4.31-3.63h4.96l-1.11.8h-1.57c1.04.4,1.6,1.62,1.6,2.86,0,1.05-.58,1.95-1.4,2.59-.8.62-.95.89-.95,1.42,0,.45.85,1.22,1.3,1.54,1.31.92,1.73,1.78,1.73,3.22,0,1.79-1.74,3.57-4.87,3.57ZM23.71,16.38h-1.93v1.93h-1.55v-1.93h-1.93v-1.55h1.93v-1.93h1.55v1.93h1.93s0,1.55,0,1.55Z"/>
+                                <path class="cls-1" d="M14.92,18.14c-.38-.12-.79-.19-1.23-.2-1.9-.02-3.61,1.16-3.61,2.58s1.37,2.65,3.28,2.65c2.67,0,3.6-1.13,3.6-2.58,0-.17-.02-.34-.06-.51-.21-.82-.95-1.22-1.98-1.94Z"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a class="mx-5 text-decoration" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <g id="svg-source">
+                        <g id="twitter">
+                            <path class="cls-1" d="M16,0C7.16,0,0,7.16,0,16s7.16,16,16,16,16-7.16,16-16S24.84,0,16,0ZM22.37,13.51c0,.14,0,.28,0,.43,0,4.35-3.31,9.36-9.35,9.36-1.86,0-3.59-.54-5.04-1.48.26.03.52.05.78.05,1.54,0,2.96-.52,4.08-1.41-1.44-.02-2.65-.98-3.07-2.28.2.04.41.06.62.06.3,0,.59-.04.87-.12-1.51-.3-2.64-1.63-2.64-3.22v-.04c.44.24.95.39,1.49.41-.88-.59-1.46-1.6-1.46-2.74,0-.6.16-1.17.44-1.65,1.62,1.99,4.05,3.3,6.78,3.44-.06-.24-.09-.49-.09-.75,0-1.81,1.47-3.29,3.29-3.29.95,0,1.8.4,2.4,1.04.75-.15,1.45-.42,2.09-.8-.24.77-.77,1.41-1.45,1.82.67-.08,1.3-.26,1.89-.52-.44.66-1,1.24-1.64,1.7Z"/>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a class="mx-5 text-decoration" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <g id="svg-source">
+                        <g id="linkedin">
+                            <path class="cls-1" d="M16,0C7.16,0,0,7.16,0,16s7.16,16,16,16,16-7.16,16-16S24.84,0,16,0ZM11.52,22.69h-3.12v-9.98h3.12s0,9.98,0,9.98ZM9.88,11.46h-.02c-1.13,0-1.86-.76-1.86-1.73,0-.98.75-1.73,1.91-1.73s1.86.75,1.88,1.73c0,.97-.73,1.73-1.9,1.73ZM24,22.69h-3.54v-5.16c0-1.35-.55-2.27-1.77-2.27-.93,0-1.45.62-1.69,1.22-.09.22-.08.51-.08.82v5.4h-3.5s.05-9.15,0-9.98h3.5v1.57c.21-.69,1.33-1.66,3.11-1.66,2.22,0,3.96,1.44,3.96,4.53,0,0,0,5.55,0,5.55Z"/>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a class="mx-5 text-decoration" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <g id="svg-source">
+                        <g id="facebook">
+                            <path class="cls-1" d="M16,0C7.16,0,0,7.16,0,16s7.16,16,16,16,16-7.16,16-16S24.84,0,16,0ZM19.53,13.29l-.18,2.39h-2.45v8.31h-3.1v-8.31h-1.65v-2.39h1.65v-1.61c0-.71.02-1.8.53-2.48.54-.72,1.29-1.2,2.57-1.2,2.09,0,2.97.3,2.97.3l-.41,2.45s-.69-.2-1.33-.2-1.22.23-1.22.87v1.87h2.64Z"/>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <p id="copyright" class="fs-5 text-white sourcesanslight">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Hype</p>
+    </div>
+
+
+</footer>
+
+
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<script src="js/script.js"></script>
+
+<!-- AOS script-->
+<script>
+    AOS.init({
+        duration: 1000, // Tijdsduur van de animatie in milliseconden
+        easing: 'ease-in-out', // Easing van de animatie
+
+        once: true,  // Animatie gebeurt slechts één keer
+    });
+</script>
+
+
+</body>
+</html>
