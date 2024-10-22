@@ -1,4 +1,12 @@
-/* GEOLOCATIE API LEAFLET */
+/* AOS SCRIPT */
+AOS.init({
+    duration: 1000, // Tijdsduur van de animatie in milliseconden
+    easing: 'ease-in-out', // Easing van de animatie
+
+    once: true,  // Animatie gebeurt slechts één keer
+});
+
+/* GEOLOCATIE API LEAFLET SCRIPT */
 
     let map; // Declareer de map variabele voor Leaflet
     let marker; // Declareer de marker variabele voor de gebruikerslocatie

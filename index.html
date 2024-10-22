@@ -1,63 +1,72 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <!-- Basis meta tags voor karakterset en scherminstellingen -->
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Zorgt ervoor dat de pagina correct wordt weergegeven in oudere IE-versies -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- AOS CSS -->
+    <!-- AOS (Animate On Scroll) CSS voor animaties -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Leaflet CSS voor kaarten -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
 
-    <!-- STYLE CSS-->
+    <!-- Link naar de externe CSS-stylesheet voor de website -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- Titel van de webpagina -->
     <title>Hype</title>
 
 </head>
 <body>
 
 <header id="hero" class="cbgblue">
-    <!-- wrapper -->
+    <!-- Wrapper -->
     <section class="wrapper text-center d-flex flex-column align-items-center">
         <div>
+            <!-- Navigatie naar de homepage en logo -->
             <a href="./"><img id="navbrand" src="./images/logo.png" alt="Hype logo"></a>
             <p class="fs-6 text-white sourcesanslight">LANDING PAGE</p>
-            <h1 class="fs-1 text-white" data-aos="fade-down">Hype Landing Page is the best way to<br>
+            <!-- Hoofdtekst met een grote titel -->
+            <h1 class="fs-1 text-white fade-in-top">Hype Landing Page is the best way to<br>
                 present your beautiful mobile app.</h1>
+
+            <!-- d-flex justify-content-center - zet de buttons naast elkaar en in het midden -->
             <div class="d-flex justify-content-center text-center">
-                <!-- link button -->
                 <a class="btn cbgseetrublack fs-4 text-white sourcesansbold text-decoration" href="#">Learn More</a>
                 <a class="btn cbggreen fs-4 text-white sourcesansbold text-decoration" href="#">Download Now</a>
             </div>
         </div>
-        <img id="hero-image" src="./images/hero-img.png" alt="hero image" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- Afbeelding van de hero-sectie -->
+        <img id="hero-image" class="fade-in-bottom" src="./images/hero-img.png" alt="hero image">
     </section><!-- End wrapper -->
 </header>
 
-<!-- Main section -->
+<!-- Hoofdinhoud van de pagina -->
 <main>
     <!-- Section 1 -->
     <section id="section1">
         <!-- wrapper -->
         <div class="wrapper text-center py-100">
-            <!-- Header section 1-->
-            <header>
+            <!-- Header van sectie 1 met een titel en beschrijving -->
+            <header data-aos="fade-down">
                 <h2 class="fs-2 text-black">Built with Bootstrap v3.0</h2>
                 <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol. Olypian<br>
                     quarrels et gorilla congolium sic ad nauseum.
                 </p>
             </header>
 
-            <!-- div groepering van articles -->
+            <!-- Div voor het groeperen van meerdere artikelen -->
+            <!-- d-flex zet de articles naast elkaar, justify-content-between zet ze horizontaal uit elkaar in de wrapper -->
             <div class="d-flex justify-content-between mt-100">
                 <!-- article 1 -->
-                <article>
+                <article data-aos="fade-down">
                     <svg class="icons-gray-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                        <g id="svg-source">
+                        <g>
                             <g id="compass">
                                 <g>
                                     <path d="M22.59,8.65l-9.55,4.09c-.14.06-.24.17-.3.3l-4.09,9.54c-.09.22-.04.47.13.64.11.11.26.17.41.17.07,0,.15-.02.23-.05l9.54-4.09c.14-.06.25-.17.31-.3l4.09-9.54c.09-.22.04-.47-.12-.64-.16-.16-.42-.21-.64-.12ZM10.28,21.72l3.18-7.43,4.25,4.25-7.43,3.18ZM18.53,17.72l-4.25-4.25,7.43-3.19-3.18,7.44Z"/>
@@ -74,9 +83,9 @@
                     <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol. </p>
                 </article>
                 <!-- article 2 -->
-                <article>
+                <article data-aos="fade-down" data-aos-delay="200">
                     <svg class="icons-gray-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 31.07">
-                        <g id="svg-source">
+                        <g>
                             <g id="mapicon">
                                 <path d="M31.22.04l-10.08,3.75L11.06.04s-.04,0-.07,0c-.05-.01-.09-.02-.14-.02s-.09,0-.14.02c-.02,0-.05,0-.07,0L.38,3.86c-.23.08-.38.3-.38.54v26.08c0,.19.09.36.25.48.1.07.21.1.33.1.07,0,.13-.01.2-.04l10.08-3.75,10.08,3.75c.07.02.14.04.2.04s.14-.01.2-.04l10.28-3.83c.23-.08.38-.3.38-.54V.58c0-.19-.09-.37-.25-.47-.15-.11-.35-.14-.53-.07ZM10.28,26.26l-9.13,3.4V4.8L10.28,1.41v24.85ZM20.57,29.66l-9.13-3.4V1.41l9.13,3.4v24.85ZM30.85,26.26l-9.13,3.4V4.8l9.13-3.4v24.85Z"/>
                             </g>
@@ -86,9 +95,9 @@
                     <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol. </p>
                 </article>
                 <!-- article 3 -->
-                <article>
+                <article data-aos="fade-down" data-aos-delay="400">
                     <svg class="icons-gray-big" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                        <g id="svg-source">
+                        <g>
                             <g id="calendar">
                                 <g>
                                     <path d="M31.43,0H.57c-.31,0-.57.26-.57.57v30.85c0,.32.26.57.57.57h30.85c.31,0,.57-.26.57-.58V.57c0-.31-.26-.57-.57-.57ZM1.15,1.15h29.7v8.42H1.15V1.15ZM1.15,10.71h29.7v12.43h-7.14c-.31,0-.57.26-.57.58v7.14H1.15V10.71ZM30.04,24.29l-5.75,5.75v-5.75h5.75ZM25.1,30.85l5.75-5.75v5.75h-5.75Z"/>
@@ -108,17 +117,17 @@
     <!-- Section 2 -->
     <section id="section2">
         <!-- wrapper -->
+        <!-- d-flex zet zijn childs naast elkaar en centreer ze horizontaal en verticaal -->
         <div class="wrapper d-flex justify-content-center align-items-center">
-            <!-- images -->
-            <div class="d-flex justify-content-center me-50">
-                <div id="section-2-img-parent" class="mt-50" data-aos="fade-left">
-                    <img id="iphone2" src="./images/iphone2.png" alt="iphone" data-aos="fade-left" data-aos-delay="300">
-                    <img id="iphone1" src="./images/iphone1.png" alt="iphone" >
-                </div>
-            </div><!-- end images -->
+            <!-- iphone images -->
+            <div id="section-2-img-parent" class="me-50 mt-50" data-aos="fade-left">
+                <img id="iphone2" src="./images/iphone2.png" alt="iphone" data-aos="fade-left" data-aos-delay="300">
+                <img id="iphone1" src="./images/iphone1.png" alt="iphone" >
+            </div>
+            <!-- end images -->
 
             <!-- Header en articles -->
-            <div class="py-100 ml-50">
+            <div class="py-100 ml-50" data-aos="fade-down">
                 <header>
                     <h2 class="fs-2 text-black">Detailed documentation</h2>
                     <p class="fs-5 text-black sourcesansregular  mb-50">Epsum factorial non deposit quid pro quo hic escorol.<br> Olypian quarrels et gorilla congolium sic.</p>
@@ -128,7 +137,7 @@
                 <article class="d-flex mb-50">
                     <div class="w-70">
                         <svg class="icons-gray-small " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 31.95">
-                            <g id="svg-source">
+                            <g>
                                 <g id="graph-pie1">
                                     <g>
                                         <path d="M17.7,0h-.58v15.79h14.8l.04-.53c.02-.32.04-.65.04-.97,0-7.88-6.41-14.29-14.3-14.29ZM30.84,14.64h-12.56V1.17c6.98.3,12.56,6.07,12.56,13.12,0,.12,0,.23,0,.35Z"/>
@@ -147,7 +156,7 @@
                 <article class="d-flex">
                     <div class="w-70">
                         <svg class="icons-gray-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 31.98">
-                            <g id="svg-source">
+                            <g>
                                 <g id="joystick">
                                     <g>
                                         <path d="M20.3,25.41h-8.61c-.98,0-1.32.47-1.44.75-.12.28-.2.85.49,1.54l3.59,3.59c.44.44,1.03.69,1.66.69s1.22-.24,1.66-.69l3.59-3.59c.7-.7.61-1.27.49-1.54-.11-.27-.45-.74-1.44-.74ZM20.37,26.82l-3.59,3.59c-.42.41-1.15.41-1.56,0l-3.59-3.59c-.06-.05-.1-.1-.13-.15.05,0,.12-.01.19-.01h8.61c.08,0,.15,0,.2.01-.03.04-.07.09-.13.15Z"/>
@@ -172,7 +181,7 @@
     <!-- Section 3 -->
     <section id="section3">
         <!-- wrapper -->
-        <div class="wrapper d-flex justify-content-center align-items-center">
+        <div class="wrapper d-flex justify-content-center align-items-center" data-aos="fade-down">
             <!-- Header en articles -->
             <div class="py-100 me-50">
                 <header>
@@ -184,7 +193,7 @@
                 <article class="d-flex mb-50">
                     <div class="w-70">
                         <svg class="icons-gray-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.43 32">
-                            <g id="svg-source">
+                            <g>
                                 <g id="ribbon">
                                     <g>
                                         <path d="M19.86,0H.58c-.32,0-.58.26-.58.57v30.85c0,.23.14.44.35.53.22.1.46.04.63-.12l1.92-1.92s0,0,0,0l7.3-7.3,9.24,9.23c.11.11.25.17.41.17.07,0,.15-.01.22-.05.21-.09.35-.3.35-.53V.57c0-.32-.26-.57-.57-.57ZM19.29,30.04l-.78-.78v-3.62c0-.32-.26-.57-.57-.57s-.57.26-.57.57v2.47l-6.74-6.73c-.11-.11-.26-.17-.4-.17s-.29.06-.4.17l-6.73,6.73v-2.47c0-.32-.26-.57-.57-.57s-.57.26-.57.57v3.61l-.78.78V1.15h18.14v28.89h0Z"/>
@@ -208,7 +217,7 @@
                 <article class="d-flex">
                     <div class="w-70">
                         <svg class="icons-gray-small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.26 32">
-                            <g id="svg-source">
+                            <g>
                                 <g id="rotate">
                                     <g>
                                         <path d="M29.46,11.19c-.12-.37-.52-.58-.9-.45-.37.12-.58.53-.45.9,1.67,5,.42,10.39-3.26,14.08-5.37,5.36-14.09,5.36-19.44,0-.15-.15-.25-.31-.39-.48h4.95c.39,0,.71-.32.71-.71s-.32-.71-.71-.71H3.79c-.25-.21-.58-.27-.85-.08-.02.02-.02.05-.04.07h-.39v7.47c0,.39.32.71.71.71s.71-.32.71-.71v-5.1c.16.18.3.36.47.53,2.96,2.95,6.84,4.43,10.73,4.43s7.77-1.48,10.73-4.43c4.06-4.07,5.44-10.02,3.6-15.53Z"/>
@@ -240,7 +249,7 @@
     <section id="section4" class="cbggray">
         <!-- wrapper -->
         <div class="wrapper">
-            <header class="text-center pt-100 mb-50">
+            <header class="text-center pt-100 mb-50"  data-aos="fade-down">
                 <h2 class="fs-2 text-black">Awesome features</h2>
                 <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol.<br> Olypian quarrels et gorilla congolium sic.</p>
             </header>
@@ -248,7 +257,7 @@
             <!-- Parent van articles en image -->
             <div class="d-flex justify-content-evenly align-items-center">
                 <!-- Article groepering div -->
-                <div class="text-end">
+                <div class="text-end" data-aos="fade-down" data-aos-delay="200">
                     <!-- article 1 -->
                     <article class="mb-50">
                         <h4 class="fs-5 text-green sourcesanssemibold">Lorem ipsum dolor</h4>
@@ -262,10 +271,10 @@
                 </div>
 
                 <!-- center image -->
-                <img src="./images/iphone5.png" alt="iphone">
+                <img src="./images/iphone5.png" alt="iphone" data-aos="fade-up" data-aos-delay="300">
 
                 <!-- Article groepering div -->
-                <div>
+                <div data-aos="fade-down" data-aos-delay="200">
                     <!-- article 3 -->
                     <article class="mb-50">
                         <h4 class="fs-5 text-green sourcesanssemibold">Lorem ipsum dolor</h4>
@@ -285,18 +294,28 @@
     <section id="gallery-section">
         <!-- wrapper -->
         <div class="wrapper py-100">
-            <header class="text-center">
+            <header class="text-center" data-aos="fade-down">
                 <h2 class="fs-2 text-black">Screenshot Gallery</h2>
                 <p class="fs-5 text-black sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol.<br>Olypian quarrels et gorilla congolium sic.</p>
             </header>
 
             <!-- Gallery -->
-            <div id="gallery" class="d-flex justify-content-center mt-50">
-                <div class="gallery-item"><img src="./images/gallery1.jpg" alt="gallery item"></div>
-                <div class="gallery-item"><img src="./images/gallery2.jpg" alt="gallery item"></div>
-                <div class="gallery-item"><img src="./images/gallery3.jpg" alt="gallery item"></div>
-                <div class="gallery-item"><img src="./images/gallery4.jpg" alt="gallery item"></div>
-                <div class="gallery-item"><img src="./images/gallery5.jpg" alt="gallery item"></div>
+            <div class="d-flex justify-content-center mt-50" data-aos="fade-up" data-aos-delay="200" id="gallery">
+                <div class="gallery-item">
+                    <img alt="gallery item" src="./images/gallery1.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img alt="gallery item" src="./images/gallery2.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img alt="gallery item" src="./images/gallery3.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img alt="gallery item" src="./images/gallery4.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img alt="gallery item" src="./images/gallery5.jpg">
+                </div>
             </div>
         </div><!-- end wrapper -->
     </section> <!-- End gallery section -->
@@ -305,7 +324,7 @@
     <section id="geolocation-section" class="cbggray">
         <!-- wrapper -->
         <div class="wrapper text-center pt-100">
-            <header>
+            <header data-aos="fade-down">
                 <h2 class="fs-2 text-black">Hey, Future Developer! We’re Watching...</h2>
                 <h3 class="fs-3 text-green">Go ahead, click the button.</h3>
                 <p class="fs-5 text-black sourcesansregular">But be warned—your location might just expose you as a Syntra West code wizard in training!</p>
@@ -314,15 +333,15 @@
         </div><!-- End wrapper -->
 
         <div id="geolocation" class="text-center">
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="200">
                 <!-- geolocation button -->
                 <!-- De knop om de locatie op te halen -->
-                <button class="btn cbggreen d-flex justify-content-center align-items-center sourcesanssemibold fs-5" id="find-me">Click Me!<img src="./images/chicken.png" alt="chicken icon"></button><br>
+                <button class="btn cbggreen d-flex justify-content-center align-items-center sourcesanssemibold fs-3" id="find-me">Click Me!</button><br>
                 <p id="status" class="fs-5 text-black sourcesansregular"></p>
             </div>
             <div class="d-flex">
 
-                <iframe src="https://www.youtube.com/embed/xUEoncwf4K0?si=Fygj64niiUJygbur" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/xUEoncwf4K0?si=Fygj64niiUJygbur" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 <!-- De Leaflet kaart die altijd zichtbaar is -->
                 <div id="map"></div>
@@ -338,21 +357,18 @@
 <!-- Footer -->
 <footer class="cbgblue">
 
-    <!-- footer header-->
-    <header>
         <!-- wrapper -->
-        <div id="footer-block-1" class="wrapper d-flex justify-content-center text-center">
-            <div  id="subscribe" class="py-100">
-                <h2 class="fs-2 text-white">Subscribe to our newsletter</h2>
-                <p class="fs-5 text-white sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol.<br> Olypian quarrels et gorilla congolium sic.</p>
+    <div id="footer-block-1" class="wrapper d-flex justify-content-center text-center">
+        <div  id="subscribe" class="py-100">
+            <h2 class="fs-2 text-white">Subscribe to our newsletter</h2>
+            <p class="fs-5 text-white sourcesansregular">Epsum factorial non deposit quid pro quo hic escorol.<br> Olypian quarrels et gorilla congolium sic.</p>
 
-                    <form action="" method="post" id="subscribe-form" class="d-flex justify-content-between mt-50">
-                        <input type="email" name="email" id="subscribe-input" class="fs-5 sourcesanslight flex-grow-1" placeholder="Enter your e-mail address..." required="">
-                        <button type="submit" id="subscribe-submit" class="fs-5 text-white sourcesansbold">Notify Me</button>
-                    </form>
-            </div>
-        </div><!-- End wrapper -->
-    </header>
+            <form action="php" method="post" id="subscribe-form" class="d-flex justify-content-between mt-50">
+                <input type="email" name="email" id="subscribe-input" class="fs-5 sourcesanslight flex-grow-1" placeholder="Enter your e-mail address..." required="">
+                <button type="submit" id="subscribe-submit" class="fs-5 text-white sourcesansbold">Notify Me</button>
+            </form>
+        </div>
+    </div><!-- End wrapper -->
 
     <div id="footer-block-2" class="text-center py-50">
         <!-- Social media -->
@@ -366,7 +382,7 @@
                             }
                         </style>
                     </defs>
-                    <g id="svg-source">
+                    <g>
                         <g id="google-plus">
                             <g>
                                 <path class="cls-1" d="M15.77,11.72c-.22-1.68-1.43-3.02-2.71-3.06s-2.13,1.24-1.91,2.92c.22,1.68,1.43,3.06,2.71,3.1,1.28.04,2.13-1.29,1.91-2.97Z"/>
@@ -386,7 +402,7 @@
                             }
                         </style>
                     </defs>
-                    <g id="svg-source">
+                    <g>
                         <g id="twitter">
                             <path class="cls-1" d="M16,0C7.16,0,0,7.16,0,16s7.16,16,16,16,16-7.16,16-16S24.84,0,16,0ZM22.37,13.51c0,.14,0,.28,0,.43,0,4.35-3.31,9.36-9.35,9.36-1.86,0-3.59-.54-5.04-1.48.26.03.52.05.78.05,1.54,0,2.96-.52,4.08-1.41-1.44-.02-2.65-.98-3.07-2.28.2.04.41.06.62.06.3,0,.59-.04.87-.12-1.51-.3-2.64-1.63-2.64-3.22v-.04c.44.24.95.39,1.49.41-.88-.59-1.46-1.6-1.46-2.74,0-.6.16-1.17.44-1.65,1.62,1.99,4.05,3.3,6.78,3.44-.06-.24-.09-.49-.09-.75,0-1.81,1.47-3.29,3.29-3.29.95,0,1.8.4,2.4,1.04.75-.15,1.45-.42,2.09-.8-.24.77-.77,1.41-1.45,1.82.67-.08,1.3-.26,1.89-.52-.44.66-1,1.24-1.64,1.7Z"/>
                         </g>
@@ -402,7 +418,7 @@
                             }
                         </style>
                     </defs>
-                    <g id="svg-source">
+                    <g>
                         <g id="linkedin">
                             <path class="cls-1" d="M16,0C7.16,0,0,7.16,0,16s7.16,16,16,16,16-7.16,16-16S24.84,0,16,0ZM11.52,22.69h-3.12v-9.98h3.12s0,9.98,0,9.98ZM9.88,11.46h-.02c-1.13,0-1.86-.76-1.86-1.73,0-.98.75-1.73,1.91-1.73s1.86.75,1.88,1.73c0,.97-.73,1.73-1.9,1.73ZM24,22.69h-3.54v-5.16c0-1.35-.55-2.27-1.77-2.27-.93,0-1.45.62-1.69,1.22-.09.22-.08.51-.08.82v5.4h-3.5s.05-9.15,0-9.98h3.5v1.57c.21-.69,1.33-1.66,3.11-1.66,2.22,0,3.96,1.44,3.96,4.53,0,0,0,5.55,0,5.55Z"/>
                         </g>
@@ -418,7 +434,7 @@
                             }
                         </style>
                     </defs>
-                    <g id="svg-source">
+                    <g>
                         <g id="facebook">
                             <path class="cls-1" d="M16,0C7.16,0,0,7.16,0,16s7.16,16,16,16,16-7.16,16-16S24.84,0,16,0ZM19.53,13.29l-.18,2.39h-2.45v8.31h-3.1v-8.31h-1.65v-2.39h1.65v-1.61c0-.71.02-1.8.53-2.48.54-.72,1.29-1.2,2.57-1.2,2.09,0,2.97.3,2.97.3l-.41,2.45s-.69-.2-1.33-.2-1.22.23-1.22.87v1.87h2.64Z"/>
                         </g>
