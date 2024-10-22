@@ -65,8 +65,7 @@
     font-size: 14px;
 }
 
-
-/* MARGINS, PADDINGS, BREEDTES */
+/* MARGINS, PADDINGS EN BREEDTES */
 
 .py-100{
     padding: 100px 0;
@@ -74,39 +73,33 @@
 .pt-100{
     padding-top: 100px;
 }
-
 .pb-100{
     padding-bottom: 100px;
 }
-
 .py-50{
     padding: 50px 0;
 }
 .mx-5{
     margin: 0 5px;
 }
-
 .me-50{
     margin-right:50px;
 }
-
 .ms-50{
     margin-left:50px;
 }
-
 .mb-50{
     margin-bottom:50px
 }
-
 .mb-50{
     margin-bottom:50px;
 }
-
-
 .mt-100{
     margin-top:100px;
 }
-.mt-50{margin-top:50px;}
+.mt-50{
+    margin-top:50px;
+}
 .w-70{
     width: 70px;
 }
@@ -152,62 +145,48 @@
 .d-flex {
     display: flex;
 }
-
 .d-inline-flex {
     display: inline-flex;
 }
-
 /* Flex Direction */
 .flex-row {
     flex-direction: row;
 }
-
 .flex-row-reverse {
     flex-direction: row-reverse;
 }
-
 .flex-column {
     flex-direction: column;
 }
-
 .flex-column-reverse {
     flex-direction: column-reverse;
 }
-
 /* Flex Wrap */
 .flex-wrap {
     flex-wrap: wrap;
 }
-
 .flex-nowrap {
     flex-wrap: nowrap;
 }
-
 .flex-wrap-reverse {
     flex-wrap: wrap-reverse;
 }
-
 /* Justify Content */
 .justify-content-start {
     justify-content: flex-start;
 }
-
 .justify-content-end {
     justify-content: flex-end;
 }
-
 .justify-content-center {
     justify-content: center;
 }
-
 .justify-content-between {
     justify-content: space-between;
 }
-
 .justify-content-around {
     justify-content: space-around;
 }
-
 .justify-content-evenly {
     justify-content: space-evenly;
 }
@@ -216,19 +195,15 @@
 .align-items-start {
     align-items: flex-start;
 }
-
 .align-items-end {
     align-items: flex-end;
 }
-
 .align-items-center {
     align-items: center;
 }
-
 .align-items-baseline {
     align-items: baseline;
 }
-
 .align-items-stretch {
     align-items: stretch;
 }
@@ -237,23 +212,18 @@
 .align-content-start {
     align-content: flex-start;
 }
-
 .align-content-end {
     align-content: flex-end;
 }
-
 .align-content-center {
     align-content: center;
 }
-
 .align-content-between {
     align-content: space-between;
 }
-
 .align-content-around {
     align-content: space-around;
 }
-
 .align-content-stretch {
     align-content: stretch;
 }
@@ -262,23 +232,18 @@
 .align-self-auto {
     align-self: auto;
 }
-
 .align-self-start {
     align-self: flex-start;
 }
-
 .align-self-end {
     align-self: flex-end;
 }
-
 .align-self-center {
     align-self: center;
 }
-
 .align-self-baseline {
     align-self: baseline;
 }
-
 .align-self-stretch {
     align-self: stretch;
 }
@@ -287,76 +252,58 @@
 .order-first {
     order: -1;
 }
-
 .order-last {
     order: 13;
 }
-
 .order-0 {
     order: 0;
 }
-
 .order-1 {
     order: 1;
 }
-
 .order-2 {
     order: 2;
 }
-
 .order-3 {
     order: 3;
 }
-
 .order-4 {
     order: 4;
 }
-
 .order-5 {
     order: 5;
 }
-
 .order-6 {
     order: 6;
 }
-
 .order-7 {
     order: 7;
 }
-
 .order-8 {
     order: 8;
 }
-
 .order-9 {
     order: 9;
 }
-
 .order-10 {
     order: 10;
 }
-
 .order-11 {
     order: 11;
 }
-
 .order-12 {
     order: 12;
 }
-
 /* Grow and Shrink */
 .flex-grow-0 {
     flex-grow: 0;
 }
-
 .flex-grow-1 {
     flex-grow: 1;
 }
-
 .flex-shrink-0 {
     flex-shrink: 0;
 }
-
 .flex-shrink-1 {
     flex-shrink: 1;
 }
@@ -372,9 +319,6 @@
 .list-style-none{
     list-style-type: none;
 }
-
-
-
 
 /* BODY */
 
@@ -408,12 +352,12 @@ h3{
 h4{
     margin:0;
 }
-
 p{
     margin:0;
     line-height: 1.7;
 }
 
+/* Algeneme stijl voor alle buttons met deze class */
 .btn{
     width: 153px;
     border-radius: 8px;
@@ -443,12 +387,12 @@ p{
 
 /* HERO section */
 
-img#navbrand{
-    margin-top:77px;
-}
-
 #hero{
     overflow-y: hidden;
+}
+
+img#navbrand{
+    margin-top:77px;
 }
 
 #hero-image {
@@ -456,12 +400,15 @@ img#navbrand{
     margin: 70px 0 0 0;
     overflow: hidden;
 }
+
+
 /* Section 1 */
 
 #section1{
     border-bottom:1px solid #f0f0f0;
 }
 
+/* stijl voor alle grote grijze icons */
 .icons-gray-big{
     fill: #d8d8d8;
     height:70px;
@@ -474,6 +421,10 @@ img#navbrand{
 }
 
 /* Section 2 & Section 3 */
+
+#section2{
+    border-bottom:1px solid #f0f0f0;
+}
 
 #section-2-img-parent{
     position: relative;
@@ -517,6 +468,7 @@ img#navbrand{
     z-index:0
 }
 
+/* stijl voor alle kleine grijze icons */
 .icons-gray-small{
     fill: #d8d8d8;
     height:32px;
@@ -526,9 +478,6 @@ img#navbrand{
     width: 250px;
 }
 
-#section2{
-    border-bottom:1px solid #f0f0f0;
-}
 
 /* Section 4 */
 
@@ -542,7 +491,6 @@ img#navbrand{
 
 #section4 img{
     width: 275px;
-
 }
 
 /* Gallery section */
@@ -550,8 +498,6 @@ img#navbrand{
 #gallery-section{
     border-bottom:1px solid #f0f0f0;
 }
-
-
 
 #gallery .gallery-item img{
     width: 140px;
@@ -563,10 +509,10 @@ img#navbrand{
     cursor:pointer;
 }
 
+/* Hover effectje voor de gallery items */
 #gallery .gallery-item img:hover{
     transform: translateY(-10px);
 }
-
 
 /* SUBSCRIBE FORM */
 
@@ -612,21 +558,6 @@ p#copyright{
 #geolocation button{
     margin:40px auto;
     cursor: pointer;
-    transition: .3s ease;
-}
-
-#geolocation button img{
-    width: 25px;
-    margin-left:10px;
-    transition: .3s ease;
-}
-
-#geolocation button:hover img{
-    transform: translateX(6px);
-}
-
-#geolocation button:hover{
-    opacity: 0.8;
 }
 
 /* Styling voor de kaart */
@@ -636,6 +567,7 @@ p#copyright{
     margin:0 auto;
 }
 
+/* Styling voor de youtube video */
 iframe{
     width: 40%;
     height:400px;
@@ -652,8 +584,11 @@ iframe{
     width: 470px;
 }
 
-#social-media a svg, .cls-1{
+#social-media a svg{
     width: 40px;
+}
+
+#social-media a svg, .cls-1{
     transition: all 0.2s ease-in-out;
 }
 
@@ -661,6 +596,7 @@ iframe{
     animation: pulse 0.8s;
 }
 
+/* Na het hoveren van de svg moet de .cls-1 class de fill veranderen van kleur */
 #social-media svg:hover .cls-1{
     fill: #a7cb00;
 }
@@ -736,11 +672,8 @@ iframe{
     }
 }
 
-
-
 /* AOS settings */
 
-/* Aangepaste fade-left animatie */
 [data-aos="fade-left"] {
     transform: translateX(30px); /* Beweeg het element maar 30px naar links */
 }
@@ -750,10 +683,9 @@ iframe{
 }
 
 [data-aos="fade-down"] {
-    transform: translateY(-20px); /* Beweeg het element maar 30px naar beneden */
+    transform: translateY(-20px); /* Beweeg het element maar 20px naar beneden */
 }
 
-
 [data-aos="fade-up"] {
-    transform: translateY(20px); /* Beweeg het element maar 30px naar boven */
+    transform: translateY(20px); /* Beweeg het element maar 20px naar boven */
 }

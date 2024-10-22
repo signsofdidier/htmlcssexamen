@@ -11,7 +11,6 @@ AOS.init({
     let map; // Declareer de map variabele voor Leaflet
     let marker; // Declareer de marker variabele voor de gebruikerslocatie
 
-
 // Initialiseer de kaart en schakel scrollwielzoom uit
 map = L.map('map', {
     scrollWheelZoom: false // Standaard uitgeschakeld
@@ -26,8 +25,6 @@ map.on('click', function() {
 map.on('mouseout', function() {
     map.scrollWheelZoom.disable();
 });
-
-
 
 // Voeg OpenStreetMap tiles toe aan de kaart
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -48,11 +45,11 @@ map.on('mouseout', function() {
     // Als er al een marker is, verplaats deze, anders voeg een nieuwe marker toe
     if (marker) {
     marker.setLatLng([latitude, longitude]);  // Verplaats de bestaande marker
-} else {
-    marker = L.marker([latitude, longitude]).addTo(map)  // Voeg een nieuwe marker toe
-    .bindPopup('Je bent hier!')
-    .openPopup();
-}
+    } else {
+        marker = L.marker([latitude, longitude]).addTo(map)  // Voeg een nieuwe marker toe
+        .bindPopup('Je bent hier!')
+        .openPopup();
+    }
 }
 
     // Functie om fouten te behandelen
@@ -68,8 +65,8 @@ map.on('mouseout', function() {
     findMeButton.addEventListener('click', () => {
     if (!navigator.geolocation) {
     status.textContent = 'Geolocatie wordt niet ondersteund door jouw browser.';
-} else {
-    status.textContent = 'Locatie aan het ophalen…';
-    navigator.geolocation.getCurrentPosition(success, error);
-}
+    } else {
+        status.textContent = 'Locatie aan het ophalen…';
+        navigator.geolocation.getCurrentPosition(success, error);
+    }
 });
