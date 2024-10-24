@@ -89,9 +89,6 @@
     margin-left:50px;
 }
 .mb-50{
-    margin-bottom:50px
-}
-.mb-50{
     margin-bottom:50px;
 }
 .mt-100{
@@ -103,7 +100,9 @@
 .w-70{
     width: 70px;
 }
-
+.m-0{
+    margin:0;
+}
 
 /*COLORS*/
 
@@ -349,9 +348,7 @@ h2{
 h3{
     margin:0 0 10px 0;
 }
-h4{
-    margin:0;
-}
+
 p{
     margin:0;
     line-height: 1.7;
@@ -363,7 +360,8 @@ p{
     border-radius: 8px;
     border: none;
     padding: 15px 0;
-    margin:0 10px;
+    margin-left:10px;
+    margin-right:10px;
     transition: transform 0.2s ease;
 }
 
@@ -551,12 +549,17 @@ p#copyright{
 
 /* GEOLOCATION SECTION*/
 
+#geolocation{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 #geolocation h3{
     margin-bottom:30px;
 }
 
 #geolocation button{
-    margin:40px auto;
+    margin:70px auto;
     cursor: pointer;
 }
 
